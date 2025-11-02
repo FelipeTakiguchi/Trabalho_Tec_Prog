@@ -135,7 +135,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TrabalhoFinal.cpp" />
+    <ClCompile Include="Ente.cpp" />
+    <ClCompile Include="Entidade.cpp" />
+    <ClCompile Include="Fase.cpp" />
+    <ClCompile Include="FasePrimeira.cpp" />
+    <ClCompile Include="FaseSegunda.cpp" />
+    <ClCompile Include="Gerenciador_Colisoes.cpp" />
+    <ClCompile Include="Inimigo.cpp" />
+    <ClCompile Include="Jogador.cpp" />
+    <ClCompile Include="Jogo.cpp" />
+    <ClCompile Include="Lista.cpp" />
+    <ClCompile Include="ListaEntidades.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Gerenciador_Grafico.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Obtaculo.cpp" />
+    <ClCompile Include="Personagem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ente.hpp" />
+    <ClInclude Include="Entidade.hpp" />
+    <ClInclude Include="Fase.hpp" />
+    <ClInclude Include="FasePrimeira.hpp" />
+    <ClInclude Include="FaseSegnda.hpp" />
+    <ClInclude Include="Gerenciador_colisoes.hpp" />
+    <ClInclude Include="Gerenciador_Grafico.hpp" />
+    <ClInclude Include="Inimigo.hpp" />
+    <ClInclude Include="Jogador.hpp" />
+    <ClInclude Include="Jogo.hpp" />
+    <ClInclude Include="Lista.hpp" />
+    <ClInclude Include="ListaEntidades.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="Obstaculo.hpp" />
+    <ClInclude Include="Personagem.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
