@@ -16,6 +16,7 @@ namespace TrabalhoJogo
     private:
         TrabalhoJogo::Gerenciadores::Gerenciador_Grafico* pGG;
         std::vector<TrabalhoJogo::Entidades::Personagens::Personagem*> personagens;
+        Entidades::Personagens::Jogador* jogador;
 
         void processarEventos();
         void atualizar(float deltaTime);
