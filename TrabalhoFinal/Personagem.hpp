@@ -25,6 +25,8 @@ namespace TrabalhoJogo
 
                 // Métodos comuns
                 virtual sf::RectangleShape getCorpo() const { return corpo; }
+                virtual sf::Vector2f getPosicao() const { return corpo.getPosition(); }
+
                 virtual void setPosicao(const sf::Vector2f& pos) { corpo.setPosition(pos); }
             };
         }

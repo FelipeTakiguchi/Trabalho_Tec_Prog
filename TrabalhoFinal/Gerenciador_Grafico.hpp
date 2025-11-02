@@ -12,6 +12,7 @@ namespace TrabalhoJogo
         private:
             static Gerenciador_Grafico* instancia;
             sf::RenderWindow janela;
+            sf::View camera;
 
             Gerenciador_Grafico();
 
@@ -25,6 +26,10 @@ namespace TrabalhoJogo
             void fecharJanela();
             void limpar();
             void mostrar();
+
+            void centralizarCamera(const sf::Vector2f& pos);
+            void resetarCamera();
+            sf::View* getCamera() { return &camera; }
         };
     }
 }

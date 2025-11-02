@@ -47,3 +47,15 @@ void Gerenciador_Grafico::mostrar()
 {
     janela.display();
 }
+
+void Gerenciador_Grafico::centralizarCamera(const sf::Vector2f& pos)
+{
+    camera.setCenter(pos);
+    janela.setView(camera);
+}
+
+void Gerenciador_Grafico::resetarCamera()
+{
+    camera = janela.getDefaultView();
+    janela.setView(camera);
+}
