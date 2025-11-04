@@ -36,4 +36,4 @@ Personagem::Personagem(const sf::Vector2f& pos, const sf::Vector2f& tam)
     velocidade = 100.f;
 }
 
-Personagem::~Personagem() {}
+Personagem::~Personagem(){}

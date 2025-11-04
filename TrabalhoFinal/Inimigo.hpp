@@ -20,7 +20,7 @@ namespace TrabalhoJogo
             {
             private:
                 Jogador* jogador;
-                short moveAleatorio;
+                //short moveAleatorio;
 
             public:
                 Inimigo(const sf::Vector2f pos, const sf::Vector2f tam, Jogador* j);
@@ -30,8 +30,8 @@ namespace TrabalhoJogo
                 void desenhar() override;
 
             private:
-                void persegueJogador(const sf::Vector2f& posJogador, const sf::Vector2f& posInimigo, float deltaTime);
-                void movimentoAleatorio(float deltaTime);
+                //void persegueJogador(const sf::Vector2f& posJogador, const sf::Vector2f& posInimigo, float deltaTime);
+                //void movimentoAleatorio(float deltaTime);
             };
         }
     }

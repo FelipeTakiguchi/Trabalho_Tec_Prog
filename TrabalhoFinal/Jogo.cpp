@@ -10,8 +10,11 @@ Jogo::Jogo() : personagens()
     pGG = Gerenciadores::Gerenciador_Grafico::getInstancia();
 
     // Cria jogador e inimigo dinamicamente
-    jogador = new Jogador(sf::Vector2f(100.f, 200.f), sf::Vector2f(50.f, 50.f));
-    Inimigo* inimigo = new Inimigo(sf::Vector2f(400.f, 200.f), sf::Vector2f(50.f, 50.f), jogador);
+   // jogador = new Jogador(sf::Vector2f(100.f, 200.f), sf::Vector2f(50.f, 50.f));
+   // Inimigo* inimigo = new Inimigo(sf::Vector2f(400.f, 200.f), sf::Vector2f(50.f, 50.f), jogador);
+    jogador = new Jogador({ 100.f, 300.f }, { 50.f, 50.f });
+    Inimigo* inimigo = new Inimigo({ 400.f, 300.f }, { 50.f, 50.f }, jogador);
+
 
     personagens.push_back(jogador);
     personagens.push_back(inimigo);
@@ -53,6 +56,7 @@ void Jogo::atualizar(float deltaTime)
 
     pGG->centralizarCamera(jogador->getPosicao());
 }
+
 
 
 void Jogo::renderizar()
