@@ -39,16 +39,17 @@ namespace TrabalhoJogo
 #define PERSONAGEM_HPP
 
 #include <SFML/Graphics.hpp>
+#include "Entidade.hpp"
 
 namespace TrabalhoJogo {
     namespace Entidades {
         namespace Personagens {
 
-            class Personagem {
+            class Personagem 
+            {
             protected:
                 sf::RectangleShape corpo;
-                sf::Vector2f posicao;
-                sf::Vector2f tamanho;
+                int num_vidas;
                 float velocidade;
 
             public:

@@ -5,13 +5,14 @@
 using namespace TrabalhoJogo;
 using namespace TrabalhoJogo::Entidades::Personagens;
 
-Jogo::Jogo() : personagens()
+Jogo::Jogo() : personagens() 
 {
     pGG = Gerenciadores::Gerenciador_Grafico::getInstancia();
 
     // Cria jogador e inimigo dinamicamente
    // jogador = new Jogador(sf::Vector2f(100.f, 200.f), sf::Vector2f(50.f, 50.f));
    // Inimigo* inimigo = new Inimigo(sf::Vector2f(400.f, 200.f), sf::Vector2f(50.f, 50.f), jogador);
+    
     jogador = new Jogador({ 100.f, 300.f }, { 50.f, 50.f });
     Inimigo* inimigo = new Inimigo({ 400.f, 300.f }, { 50.f, 50.f }, jogador);
 
@@ -54,7 +55,7 @@ void Jogo::atualizar(float deltaTime)
     for (auto* p : personagens)
         p->atualizar(deltaTime);
 
-    pGG->centralizarCamera(jogador->getPosicao());
+   pGG->centralizarCamera(jogador->getPosicao());
 }
 
 

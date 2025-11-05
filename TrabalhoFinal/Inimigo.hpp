@@ -20,7 +20,9 @@ namespace TrabalhoJogo
             {
             private:
                 Jogador* jogador;
-                //short moveAleatorio;
+                float tempoDecisao; // Para o movimento aleatório
+                sf::Vector2f direcaoAleatoria; // Direção atual do movimento
+                void movimentoAleatorio(float deltaTime); // Método a ser implementado
 
             public:
                 Inimigo(const sf::Vector2f pos, const sf::Vector2f tam, Jogador* j);
@@ -28,10 +30,6 @@ namespace TrabalhoJogo
 
                 void atualizar(float deltaTime) override;
                 void desenhar() override;
-
-            private:
-                //void persegueJogador(const sf::Vector2f& posJogador, const sf::Vector2f& posInimigo, float deltaTime);
-                //void movimentoAleatorio(float deltaTime);
             };
         }
     }

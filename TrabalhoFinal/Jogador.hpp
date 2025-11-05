@@ -10,7 +10,7 @@ namespace TrabalhoJogo
     {
         namespace Personagens
         {
-            class Jogador : public Personagem
+			class Jogador : public Personagem
             {
             public:
                 Jogador(const sf::Vector2f& pos, const sf::Vector2f& tam);

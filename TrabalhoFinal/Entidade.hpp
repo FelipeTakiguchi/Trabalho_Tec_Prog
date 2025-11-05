@@ -3,16 +3,20 @@
 
 #include <SFML/Graphics.hpp>
 #include "Gerenciador_Grafico.hpp"
+//#include "Ente.hpp"
 
 namespace TrabalhoJogo
 {
     namespace Entidades
     {
-        class Entidade
+		class Entidade
         {
         protected:
-            sf::Vector2f posicao;
-            sf::RectangleShape corpo;
+           sf::Vector2f posicao;
+           sf::RectangleShape corpo;
+           int x;
+           int y;
+           
 
         public:
             Entidade();
@@ -25,6 +29,6 @@ namespace TrabalhoJogo
     
 
 }
-
-
 #endif
+
+
