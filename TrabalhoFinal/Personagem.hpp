@@ -57,7 +57,6 @@ namespace TrabalhoJogo {
                 virtual ~Personagem();
 
                 virtual void atualizar(float deltaTime) = 0;
-                virtual void desenhar() = 0;
 
                 const sf::RectangleShape& getCorpo() const { return corpo; }
                 sf::Vector2f getPosicao() const { return corpo.getPosition(); }

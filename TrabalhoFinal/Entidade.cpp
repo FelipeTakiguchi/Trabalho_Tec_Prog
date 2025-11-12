@@ -9,3 +9,5 @@ TrabalhoJogo::Entidades::Entidade::Entidade()
 }
 
 TrabalhoJogo::Entidades::Entidade::~Entidade() {}
+
+void TrabalhoJogo::Entidades::Entidade::executar() {}

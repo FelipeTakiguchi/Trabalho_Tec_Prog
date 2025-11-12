@@ -15,7 +15,8 @@ namespace TrabalhoJogo
 
     private:
         TrabalhoJogo::Gerenciadores::Gerenciador_Grafico* pGG;
-        std::vector<TrabalhoJogo::Entidades::Personagens::Personagem*> personagens;
+        std::vector<Entidades::Entidade*> entidades;
+        std::vector<Entidades::Personagens::Personagem*> personagens;
         Entidades::Personagens::Jogador* jogador;
 
         void processarEventos();

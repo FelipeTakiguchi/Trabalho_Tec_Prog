@@ -17,7 +17,8 @@ namespace TrabalhoJogo
                 virtual ~Jogador();
 
                 void atualizar(float deltaTime) override;
-                void desenhar() override;
+                sf::RectangleShape& getCorpo() { return corpo; }
+                const sf::RectangleShape& getCorpo() const { return corpo; }
             };
         }
     }

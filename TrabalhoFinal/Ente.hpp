@@ -13,13 +13,21 @@ namespace TrabalhoJogo
 		protected:
 			int id;
 			static Gerenciadores::Gerenciador_Grafico* pGG;
+			sf::Drawable* pFig = nullptr;
+
 		public:
 			Ente();
 			virtual ~Ente();
-			void virtual executar() = 0;
+
+			virtual void executar() = 0;
+
 			void desenhar();
+
 			static void setGG(Gerenciadores::Gerenciador_Grafico* pG);
 
+			void setFigura(sf::Drawable* fig) { pFig = fig; }
+
+			sf::Drawable* getFigura() const { return pFig; }
 	};
 }
 

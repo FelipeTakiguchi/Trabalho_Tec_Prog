@@ -29,7 +29,6 @@ namespace TrabalhoJogo
                 virtual ~Inimigo();
 
                 void atualizar(float deltaTime) override;
-                void desenhar() override;
             };
         }
     }
